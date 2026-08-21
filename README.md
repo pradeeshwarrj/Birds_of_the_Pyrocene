@@ -48,13 +48,13 @@ The dataset comprises 120 point-count sampling stations equally distributed acro
 | :--- | :--- | :--- | :--- |
 | `S.No` | Integer | `1` | Serial index (1 to 56) |
 | `Abbr.` | Character | `AGBE` | 4-letter standardized species code |
-| `Common Name` | Character | `Asian Green Bee-eater` | English vernacular name |
-| `Scientific Name` | Character | `Merops orientalis` | Taxonomic binomial name |
-| `Order` | Character | `Coraciiformes` | Taxonomic order |
-| `Family` | Character | `Meropidae` | Taxonomic family |
-| `Feeding Substrate` | Categorical | `air` | Primary foraging stratum (`air`, `ground-vegetation`, `upper canopy`, etc.) |
-| `Feeding Technique` | Categorical | `sallier` | Primary foraging maneuver (`sallier`, `gleaner`, `frugivore-granivore`, etc.) |
-| `Nesting Location` | Categorical | `cavity` | Preferred nesting substrate (`cavity`, `shrub`, `canopy`, etc.) |
+| `Common Name` | Character | `Asian Green Bee-eater` | Common name |
+| `Scientific Name` | Character | `Merops orientalis` | Scientific name |
+| `Order` | Character | `Coraciiformes` | Order |
+| `Family` | Character | `Meropidae` | Family |
+| `Feeding Substrate` | Categorical | `air` | Primary foraging substrate (`air`, `ground-vegetation`, `upper canopy`, etc.) |
+| `Feeding Technique` | Categorical | `sallier` | Primary foraging technique (`sallier`, `gleaner`, `frugivore-granivore`, etc.) |
+| `Nesting Location` | Categorical | `cavity` | Preferred nesting location (`cavity`, `shrub`, `canopy`, etc.) |
 
 ---
 
@@ -63,7 +63,7 @@ The dataset comprises 120 point-count sampling stations equally distributed acro
 
 | Column Name | Data Type | Range / Options | Description |
 | :--- | :--- | :--- | :--- |
-| `Point_ID` | Character | `H01` – `U30` | Unique sampling station code |
+| `Point_ID` | Character | `H01` – `U30` | Unique Point count ID |
 | `Severity` | Categorical | `H`, `M`, `L`, `U` | Burn severity classes  |
 | `AGBE` ... `YEBA` | Integer | $0 – 12$ | Individual abundance count for each of the 56 species across 120 stations |
 
@@ -74,18 +74,18 @@ The dataset comprises 120 point-count sampling stations equally distributed acro
 
 | Column Name | Data Type | Units / Range | Description |
 | :--- | :--- | :--- | :--- |
-| `Point_ID` | Character | `H01` – `U30` | Unique sampling station code |
-| `Severity` | Categorical | `H`, `M`, `L`, `U` | Burn severity classification |
+| `Point_ID` | Character | `H01` – `U30` | Unique Point count ID|
+| `Severity` | Categorical | `H`, `M`, `L`, `U` | Burn severity classes |
 | `Totalindividuals` | Integer | $3 – 25$ | Total avian abundance recorded per station |
 | `Richness` | Integer | $3 – 18$ | Total species richness per station |
 | `Shannon` | Numeric | $1.099 – 2.810$ | Shannon-Wiener diversity index ($H'$) |
 | `Simpson` | Numeric | $0.600 – 0.934$ | Simpson’s diversity index ($D$) |
 | `Evenness` | Numeric | $0.763 – 1.000$ | Pielou’s species evenness index ($J'$) |
-| `dnbr` | Numeric | Standardized | Continuous Difference Normalized Burn Ratio (dNBR) index |
+| `dnbr` | Numeric | Standardized | Detla Normalized Burn Ratio (dNBR) index |
 | `stdev_sev` | Numeric | Standardized | Spatial standard deviation of burn severity within grid cell |
-| `Visibility` | Ordinal | $1 – 4$ | Field visibility score during sampling |
+| `Visibility` | Ordinal | $1 – 4$ | Field visibility score as a proxy of invasice species cover |
 | `Weather` | Ordinal | $1 – 6$ | Weather condition score during sampling |
-| `Elevation` | Numeric | $929 – 1143$ meters | Elevation above sea level |
+| `Elevation` | Numeric | $929 – 1143$ meters | Elevation  |
 | `Slope` | Numeric | Standardized | Terrain slope gradient |
 | `Aspect` | Numeric | Standardized | Terrain aspect angle |
 | `mean_ndvi_grid` | Numeric | Standardized | Mean NDVI within a grid|
@@ -102,7 +102,7 @@ The dataset comprises 120 point-count sampling stations equally distributed acro
 * **`foraging_technique-probing`** (86 stations): Abundance of probing species.
 
 Each guild sheet contains three columns:
-1. `Point_ID`: Station code.
+1. `Point_ID`: Point count ID.
 2. `abundance`: Total bird count within the specified guild.
 3. `Severity`: Burn severity stratum (`H`, `M`, `L`, `U`/`UB`).
 
