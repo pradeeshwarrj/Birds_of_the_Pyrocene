@@ -5,7 +5,7 @@
 
 ## Overview
 
-This repository contains the dataset and supplementary material for the research article:
+This repository contains the Dataset and supplementary material for the research article:
 
 > **Influence of Burn Severity on Avifaunal Communities in Southern Tropical Dry Deciduous Forest, Western Ghats**  
 > **Authors:** Rajagopal James Pradeeshwar, Kumar Parthasarathy Ramesh, Tharmalingam Ramesh, and Riddhika Kalle  
@@ -25,7 +25,7 @@ This repository contains the dataset and supplementary material for the research
 
 ---
 
-## Dataset Overview (`dataset.xlsx`)
+## Dataset Overview (`Dataset.xlsx`)
 
 The dataset comprises 120 point-count sampling stations equally distributed across four burn severity classes:
 * **`H`**: High Burn Severity ($n = 30$)
