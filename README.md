@@ -12,16 +12,14 @@ This repository contains the Dataset and supplementary material for the research
 > **Journal:** *Ecology and Evolution* (2026), Vol. 16, Issue 8, e74098  
 > **DOI:** [10.1002/ece3.74098](https://doi.org/10.1002/ece3.74098)
 
-
-
 ---
 
 ## Repository Contents
 
 * **`README.md`**: Repository documentation and complete data dictionary (this file).
 * **`LICENSE`**: Open-access license terms ([Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)).
-* **`Dataset.xlsx`**: Primary Excel workbook containing 7 sheets of processed species abundance, environmental covariates, guild classifications, and diversity indices.
-* **`Supplementary.docx`**: Supplementary figures, diagnostic plots, model summaries, and methodological documentation referenced in the paper.
+* **`Dataset.xlsx`**: Primary Excel workbook containing 7 sheets of processed species abundance, diversity, environmental covariates, and guild classifications.
+* **`Supplementary.docx`**: Supplementary figures, correlation plot, and model summaries referenced in the paper.
 
 ---
 
@@ -120,11 +118,6 @@ This dataset and all supplementary materials are shared under the **Creative Com
 
 If you utilize this dataset, please cite the published article:
 
-```Standard Citation:
-
-Pradeeshwar, R. J., K. P. Ramesh, T. Ramesh, and R. Kalle. 2026. “Influence of Burn Severity on Avifaunal Communities in Southern Tropical Dry Deciduous Forest, Western Ghats.” Ecology and Evolution 16, no. 8: e74098. https://doi.org/10.1002/ece3.74098.
-
-```
 ```bibtex
 @article{https://doi.org/10.1002/ece3.74098,
 author = {Pradeeshwar, Rajagopal James and Ramesh, Kumar Parthasarathy and Ramesh, Tharmalingam and Kalle, Riddhika},
